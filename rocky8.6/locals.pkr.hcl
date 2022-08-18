@@ -1,3 +1,0 @@
-locals {
-  vm_notes = "${legacy_isotime("02-01-2006")} - Template built by Packer\n\nInstalled packages:\n- open-vm-tools\n- perl\n- bash-completion\n- wget\n- nano\n- htop\n- cockpit\n\nAdditional changes:\n- Added packer user and setup passwordless sudo\n- Added ansible user and setup passwordless sudo\n- Installed EPEL repository\n- Disabled SSH for root\n- Enabled SSH password authentication\n- Changed Cockpit port to 9090\n - Allowed port 9090/tcp in Firewalld"
-}
