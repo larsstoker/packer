@@ -2,7 +2,7 @@
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
     <settings pass="windowsPE">
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-winpe -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core-winpe -->
             <SetupUILanguage>
                 <UILanguage>en-US</UILanguage>
             </SetupUILanguage>
@@ -21,10 +21,10 @@
             </DriverPaths>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup -->
             <DiskConfiguration>
-            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-diskconfiguration -->
-            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid -->
+                <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-diskconfiguration -->
+                <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-diskconfiguration-disk-modifypartitions-modifypartition-typeid -->
                 <Disk wcm:action="add">
                     <CreatePartitions>
                         <CreatePartition wcm:action="add">
@@ -72,8 +72,8 @@
             <ImageInstall>
                 <OSImage>
                     <InstallFrom>
-                    <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key -->
-                    <!-- Get-WindowsImage -ImagePath D:\sources\install.wim -->
+                        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-setup-imageinstall-dataimage-installfrom-metadata-key -->
+                        <!-- Get-WindowsImage -ImagePath D:\sources\install.wim -->
                         <MetaData wcm:action="add">
                             <Key>/IMAGE/INDEX </Key>
                             <Value>2</Value>
@@ -101,7 +101,7 @@
     </settings>
     <settings pass="specialize">
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-international-core -->
             <InputLocale>en-US</InputLocale>
             <SystemLocale>en-US</SystemLocale>
             <UILanguage>en-US</UILanguage>
@@ -109,31 +109,31 @@
             <UserLocale>en-US</UserLocale>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup -->
             <ComputerName>WinSrv2019Dc</ComputerName>
             <TimeZone>W. Europe Standard Time</TimeZone>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-ServerManager-SvrMgrNc" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-servermanager-svrmgrnc -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-servermanager-svrmgrnc -->
             <DoNotOpenServerManagerAtLogon>true</DoNotOpenServerManagerAtLogon>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-IE-ESC" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-esc -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-ie-esc -->
             <IEHardenAdmin>false</IEHardenAdmin>
             <IEHardenUser>true</IEHardenUser>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-OutOfBoxExperience" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-outofboxexperience -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-outofboxexperience -->
             <DoNotOpenInitialConfigurationTasksAtLogon>true</DoNotOpenInitialConfigurationTasksAtLogon>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-security-spp-ux -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-security-spp-ux -->
             <SkipAutoActivation>true</SkipAutoActivation>
         </component>
     </settings>
     <settings pass="oobeSystem">
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup -->
             <AutoLogon>
                 <Password>
                     <Value>P@ssw0rd</Value>
@@ -158,7 +158,7 @@
                 <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -File a:\Install-VMwareTools.ps1</CommandLine>
                     <Order>5</Order>
-                    <Description>Install VMware tools</Description>   
+                    <Description>Install VMware tools</Description>
                 </SynchronousCommand>
                 <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -File a:\Enable-WinRM.ps1</CommandLine>
@@ -192,15 +192,26 @@
                     <Value>P@ssw0rd</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Password>
+                            <Value>cABhAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+                            <PlainText>false</PlainText>
+                        </Password>
+                        <Description>For testing</Description>
+                        <DisplayName>Admin Account</DisplayName>
+                        <Group>Administrators</Group>
+                        <Name>Test2</Name>
+                    </LocalAccount>
+                </LocalAccounts>
             </UserAccounts>
-            <RegisteredOwner/>
         </component>
     </settings>
     <settings pass="offlineServicing">
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-LUA-Settings" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-        <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-lua-settings -->
+            <!-- https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-lua-settings -->
             <EnableLUA>false</EnableLUA>
         </component>
     </settings>
-    <cpi:offlineImage xmlns:cpi="urn:schemas-microsoft-com:cpi" cpi:source=""/>
+    <cpi:offlineImage xmlns:cpi="urn:schemas-microsoft-com:cpi" cpi:source="" />
 </unattend>
