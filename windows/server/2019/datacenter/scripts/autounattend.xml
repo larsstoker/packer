@@ -192,8 +192,19 @@
                     <Value>P@ssw0rd</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Password>
+                            <Value>cABhAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+                            <PlainText>false</PlainText>
+                        </Password>
+                        <Description>For testing</Description>
+                        <DisplayName>Admin Account</DisplayName>
+                        <Group>Administrators</Group>
+                        <Name>Test2</Name>
+                    </LocalAccount>
+                </LocalAccounts>
             </UserAccounts>
-            <RegisteredOwner/>
         </component>
     </settings>
     <settings pass="offlineServicing">
