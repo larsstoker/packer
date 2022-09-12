@@ -195,13 +195,13 @@
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
                         <Password>
-                            <Value>cABhAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+                            <Value>QEZWSCptOFQ5==</Value>
                             <PlainText>false</PlainText>
                         </Password>
-                        <Description>For testing</Description>
-                        <DisplayName>Admin Account</DisplayName>
+                        <Description>Ansible Service Account</Description>
+                        <DisplayName>ansible</DisplayName>
                         <Group>Administrators</Group>
-                        <Name>Test2</Name>
+                        <Name>ansible</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
