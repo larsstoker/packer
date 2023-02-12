@@ -30,7 +30,8 @@ source "vsphere-iso" "windows" {
   winrm_username = var.winrm_username
   winrm_password = var.winrm_password
   winrm_timeout  = "1h30m"
-  winrm_use_ssl  = false
+  winrm_use_ssl  = true
+  winrm_insecure = true
   communicator   = "winrm"
 
   # Network adapters
@@ -60,7 +61,7 @@ source "vsphere-iso" "windows" {
     "scripts/Install-VMwareTools.ps1",
     "scripts/Enable-WinRM.ps1"
   ]
-  floppy_img_path = "${var.pvscsi_driver_path}"
+  floppy_img_path = var.pvscsi_driver_path
 
   # Boot settings
   boot_command = [
