@@ -24,7 +24,7 @@ source "vsphere-iso" "windows" {
   # HTTP settings
   http_directory = "http"
   http_port_min  = "8680"
-  http_port_max  = "8680"
+  http_port_max  = "8690"
 
   # WinRM settings
   winrm_username = var.winrm_username
